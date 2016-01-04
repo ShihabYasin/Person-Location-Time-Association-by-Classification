@@ -1,0 +1,100 @@
+shihab@ubuntu:~$ ./scripts/compileLBJ lbj/PLTclassifier.lbj
+Note: src/myDocumentReader.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Generating code for PLclassifier_featuresExtractor
+Generating code for PTclassifier_featuresExtractor
+Generating code for PL_PTclassifier_featuresExtractor
+Generating code for OLclassifier_featuresExtractor
+Generating code for OTclassifier_featuresExtractor
+Generating code for OL_OTclassifier_featuresExtractor
+Generating code for OTHER_featuresExtractor
+Generating code for Label
+Generating code for Lebel_PL
+Generating code for Lebel_PT
+Generating code for Lebel_OL
+Generating code for Lebel_OT
+Generating code for PTclassifier
+Compiling generated code
+Training PTclassifier
+  PTclassifier: Cross Validation: k = 10, Split = random, Rounds = 10
+  PTclassifier: Training against subset 0 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.067e+03 pre 3.035e+03 delta 9.555e-01 f 5.490e+03 |g| 1.693e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.518e+02 pre 5.543e+02 delta 1.147e+00 f 2.423e+03 |g| 1.283e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 3.019e+02 pre 2.789e+02 delta 1.397e+00 f 1.871e+03 |g| 7.851e+02 CG   5
+  PTclassifier:   Subset 0 Accuracy: 86.88525%
+  PTclassifier: Training against subset 1 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.140e+03 pre 3.110e+03 delta 9.220e-01 f 5.490e+03 |g| 1.789e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.113e+02 pre 5.133e+02 delta 1.133e+00 f 2.350e+03 |g| 1.224e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.771e+02 pre 2.521e+02 delta 1.385e+00 f 1.838e+03 |g| 7.724e+02 CG   5
+  PTclassifier:   Subset 1 Accuracy: 88.52459%
+  PTclassifier: Training against subset 2 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.060e+03 pre 3.026e+03 delta 9.252e-01 f 5.490e+03 |g| 1.780e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.099e+02 pre 5.157e+02 delta 1.144e+00 f 2.430e+03 |g| 1.233e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.697e+02 pre 2.492e+02 delta 1.324e+00 f 1.920e+03 |g| 7.487e+02 CG   5
+  PTclassifier:   Subset 2 Accuracy: 88.52459%
+  PTclassifier: Training against subset 3 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 2.993e+03 pre 2.959e+03 delta 9.319e-01 f 5.490e+03 |g| 1.702e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.768e+02 pre 5.888e+02 delta 1.145e+00 f 2.497e+03 |g| 1.351e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 3.161e+02 pre 2.897e+02 delta 1.295e+00 f 1.920e+03 |g| 8.835e+02 CG   5
+  PTclassifier:   Subset 3 Accuracy: 91.80328%
+  PTclassifier: Training against subset 4 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.088e+03 pre 3.052e+03 delta 9.429e-01 f 5.490e+03 |g| 1.669e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.552e+02 pre 5.457e+02 delta 1.182e+00 f 2.402e+03 |g| 1.289e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.798e+02 pre 2.634e+02 delta 1.363e+00 f 1.847e+03 |g| 7.805e+02 CG   5
+  PTclassifier:   Subset 4 Accuracy: 86.88525%
+  PTclassifier: Training against subset 5 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.174e+03 pre 3.136e+03 delta 9.586e-01 f 5.490e+03 |g| 1.697e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 4.357e+02 pre 4.952e+02 delta 9.599e-01 f 2.316e+03 |g| 1.273e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.827e+02 pre 2.693e+02 delta 1.102e+00 f 1.880e+03 |g| 1.343e+03 CG   4
+  PTclassifier:   Subset 5 Accuracy: 85.2459%
+  PTclassifier: Training against subset 6 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.134e+03 pre 3.102e+03 delta 9.727e-01 f 5.490e+03 |g| 1.665e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.006e+02 pre 5.032e+02 delta 1.069e+00 f 2.356e+03 |g| 1.252e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.685e+02 pre 2.541e+02 delta 1.291e+00 f 1.856e+03 |g| 8.809e+02 CG   5
+  PTclassifier:   Subset 6 Accuracy: 85.2459%
+  PTclassifier: Training against subset 7 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.038e+03 pre 3.002e+03 delta 9.535e-01 f 5.490e+03 |g| 1.687e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.534e+02 pre 5.403e+02 delta 1.189e+00 f 2.452e+03 |g| 1.314e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.745e+02 pre 2.562e+02 delta 1.392e+00 f 1.899e+03 |g| 8.892e+02 CG   5
+  PTclassifier:   Subset 7 Accuracy: 86.88525%
+  PTclassifier: Training against subset 8 at Fri Sep 25 09:09:52 PDT 2015
+iter  1 act 3.016e+03 pre 2.990e+03 delta 9.758e-01 f 5.490e+03 |g| 1.654e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 4.400e+02 pre 5.542e+02 delta 9.758e-01 f 2.474e+03 |g| 1.311e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 3.665e+02 pre 3.503e+02 delta 1.120e+00 f 2.034e+03 |g| 1.761e+03 CG   5
+  PTclassifier:   Subset 8 Accuracy: 90.16393%
+  PTclassifier: Training against subset 9 at Fri Sep 25 09:09:53 PDT 2015
+iter  1 act 3.043e+03 pre 3.010e+03 delta 9.377e-01 f 5.490e+03 |g| 1.725e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.397e+02 pre 5.427e+02 delta 1.109e+00 f 2.447e+03 |g| 1.310e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 2.904e+02 pre 2.631e+02 delta 1.376e+00 f 1.908e+03 |g| 8.577e+02 CG   5
+  PTclassifier:   Subset 9 Accuracy: 88.52459%
+  PTclassifier:   90.0% confidence interval after 10 rounds: 87.86885% +/- 1.20204%
+  PTclassifier: Training on entire training set
+iter  1 act 3.406e+03 pre 3.371e+03 delta 9.441e-01 f 6.100e+03 |g| 1.895e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 5.827e+02 pre 5.927e+02 delta 1.113e+00 f 2.694e+03 |g| 1.414e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 3.172e+02 pre 2.929e+02 delta 1.340e+00 f 2.111e+03 |g| 9.503e+02 CG   5
+Writing PTclassifier
+Compiling generated code
+shihab@ubuntu:~$ 
+

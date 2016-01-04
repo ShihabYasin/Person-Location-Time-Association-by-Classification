@@ -1,0 +1,105 @@
+shihab@ubuntu:~$ ./scripts/compileLBJ lbj/PLTclassifier.lbj
+Note: src/myDocumentReader.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Generating code for PLclassifier_featuresExtractor
+Generating code for PTclassifier_featuresExtractor
+Generating code for PL_PTclassifier_featuresExtractor
+Generating code for OLclassifier_featuresExtractor
+Generating code for OTclassifier_featuresExtractor
+Generating code for OL_OTclassifier_featuresExtractor
+Generating code for OTHER_featuresExtractor
+Generating code for Label
+Generating code for Lebel_PL
+Generating code for Lebel_PT
+Generating code for Lebel_OL
+Generating code for Lebel_OT
+Generating code for PLclassifier
+Generating code for PTclassifier
+Generating code for OTclassifier
+Generating code for OLclassifier
+Generating code for PLTclassifier$$1
+Generating code for PLTclassifier
+Compiling generated code
+Note: lbjsrc/shihab/PLTclassifier$$1.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Training OLclassifier
+iter  1 act 2.689e+04 pre 2.674e+04 delta 2.021e-01 f 3.050e+04 |g| 2.662e+05 CG   1
+cg reaches trust region boundary
+iter  2 act 9.229e+02 pre 8.894e+02 delta 3.570e-01 f 3.606e+03 |g| 1.462e+04 CG   2
+cg reaches trust region boundary
+iter  3 act 7.108e+02 pre 6.369e+02 delta 4.848e-01 f 2.683e+03 |g| 3.802e+03 CG   2
+cg reaches trust region boundary
+iter  4 act 4.502e+02 pre 3.780e+02 delta 6.141e-01 f 1.972e+03 |g| 5.130e+03 CG   4
+iter  5 act 1.535e+02 pre 1.439e+02 delta 6.141e-01 f 1.522e+03 |g| 2.704e+03 CG   3
+iter  6 act 5.571e+01 pre 5.354e+01 delta 6.141e-01 f 1.368e+03 |g| 1.110e+03 CG   4
+Testing OLclassifier
+ Label   Precision Recall    F1   LCount PCount
+-----------------------------------------------
+0           99.672 100.000 99.836    304    305
+1            0.000   0.000  0.000      1      0
+-----------------------------------------------
+Accuracy    99.672    -      -      -       305
+Writing OLclassifier
+Training PLclassifier
+iter  1 act 1.595e+04 pre 1.579e+04 delta 8.210e-01 f 3.050e+04 |g| 9.807e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 1.737e+03 pre 2.599e+03 delta 6.420e-01 f 1.455e+04 |g| 7.246e+03 CG   4
+cg reaches trust region boundary
+iter  3 act 1.972e+03 pre 1.876e+03 delta 7.089e-01 f 1.281e+04 |g| 1.060e+04 CG   4
+Testing PLclassifier
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+0           87.295 93.013 90.063    229    244
+1           73.770 59.211 65.693     76     61
+----------------------------------------------
+Accuracy    84.590   -      -      -       305
+Writing PLclassifier
+Training PTclassifier
+iter  1 act 1.703e+04 pre 1.685e+04 delta 9.443e-01 f 3.050e+04 |g| 9.476e+04 CG   3
+cg reaches trust region boundary
+iter  2 act 2.917e+03 pre 2.967e+03 delta 1.115e+00 f 1.347e+04 |g| 7.071e+03 CG   3
+cg reaches trust region boundary
+iter  3 act 1.591e+03 pre 1.468e+03 delta 1.343e+00 f 1.055e+04 |g| 4.749e+03 CG   5
+Testing PTclassifier
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+0           90.498 88.889 89.686    225    221
+1           70.238 73.750 71.951     80     84
+----------------------------------------------
+Accuracy    84.918   -      -      -       305
+Writing PTclassifier
+Training OTclassifier
+iter  1 act 2.953e+04 pre 2.934e+04 delta 2.009e-01 f 3.050e+04 |g| 2.939e+05 CG   1
+iter  2 act 5.823e+02 pre 5.610e+02 delta 2.009e-01 f 9.707e+02 |g| 1.925e+04 CG   2
+iter  3 act 6.525e+01 pre 5.697e+01 delta 2.009e-01 f 3.885e+02 |g| 3.448e+03 CG   2
+cg reaches trust region boundary
+iter  4 act 3.785e+01 pre 2.800e+01 delta 3.261e-01 f 3.232e+02 |g| 8.606e+02 CG   3
+cg reaches trust region boundary
+iter  5 act 3.739e+01 pre 3.031e+01 delta 4.570e-01 f 2.854e+02 |g| 7.680e+02 CG   3
+iter  6 act 1.313e+01 pre 1.292e+01 delta 4.570e-01 f 2.480e+02 |g| 4.737e+02 CG   5
+iter  7 act 9.314e-01 pre 9.197e-01 delta 4.570e-01 f 2.348e+02 |g| 1.100e+02 CG   3
+Testing OTclassifier
+ Label   Precision Recall    F1   LCount PCount
+-----------------------------------------------
+0           99.344 100.000 99.671    303    305
+1            0.000   0.000  0.000      2      0
+-----------------------------------------------
+Accuracy    99.344    -      -      -       305
+Writing OTclassifier
+Training PLTclassifier
+iter  1 act 1.370e+04 pre 1.362e+04 delta 2.529e-01 f 3.050e+04 |g| 2.406e+05 CG   2
+cg reaches trust region boundary
+iter  2 act 3.691e+03 pre 3.683e+03 delta 3.869e-01 f 1.680e+04 |g| 2.377e+04 CG   2
+cg reaches trust region boundary
+iter  3 act 3.420e+03 pre 3.351e+03 delta 5.334e-01 f 1.311e+04 |g| 2.036e+04 CG   3
+Testing PLTclassifier
+ Label   Precision Recall   F1   LCount PCount
+----------------------------------------------
+0           94.239 92.339 93.279    248    243
+1           69.355 75.439 72.269     57     62
+----------------------------------------------
+Accuracy    89.180   -      -      -       305
+Writing PLTclassifier
+Compiling generated code
+shihab@ubuntu:~$ 
+

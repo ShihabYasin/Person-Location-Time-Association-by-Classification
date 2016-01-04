@@ -1,0 +1,6 @@
+./scripts/compileLBJ lbj/PLTclassifier.lbj
+
+$ ./scripts/App
+
+$ ./scripts/runApp
+

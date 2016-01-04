@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Compiling Trainer.java and myDocumentReader.java"
+PACKAGE=src
+javac -classpath lib/*:bin -d bin $PACKAGE/Trainer.java $PACKAGE/myDocumentReader.java
+
+echo "Running Trainer.java"
+TRAINFOLDER="data/train"
+TESTFOLDER="data/test"
+TRAININGROUNDS=50
+java -classpath lib/*:bin Trainer $TRAINFOLDER $TESTFOLDER $TRAININGROUNDS
+
+

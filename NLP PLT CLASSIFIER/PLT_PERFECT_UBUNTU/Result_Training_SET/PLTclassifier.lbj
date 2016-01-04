@@ -1,0 +1,164 @@
+
+package shihab;
+import java.util.List;
+
+    
+    
+    discrete% PLclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_PL();
+        sense d.getCount_person_name();
+        sense d.getCount_location_name();
+        sense d.getCoExistence_PersonLocation();
+        sense d.getMatchExist_titled_person();
+        sense d.getMatchExist_titled_location();
+        sense d.getEntConcentration_location_name();
+        sense d.getEntConcentration_person_name();
+        sense d.getSum_Entconcentrations_PL();	
+     }
+    
+    
+        discrete% PTclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_PT();
+        sense d.getCount_person_name();
+        sense d.getCount_time_name();
+        sense d.getCoExistence_PersonTime();
+        sense d.getMatchExist_titled_person();
+        sense d.getMatchExist_titled_time();
+        sense d.getEntConcentration_time_name();   
+        sense d.getEntConcentration_person_name();
+        sense d.getSum_Entconcentrations_PT();	
+     }
+  
+    
+    discrete% PL_PTclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_PL();
+        sense d.getCount_person_name();
+        sense d.getCount_location_name();
+        sense d.getCoExistence_PersonLocation();
+        sense d.getMatchExist_titled_person();
+        sense d.getMatchExist_titled_location();
+        sense d.getEntConcentration_location_name();
+        sense d.getEntConcentration_person_name();
+        sense d.getSum_Entconcentrations_PL();	
+        sense d.getQuotationValue_PT();    
+        sense d.getCount_time_name();
+        sense d.getCoExistence_PersonTime();
+        sense d.getMatchExist_titled_time();
+        sense d.getEntConcentration_time_name();   
+        sense d.getSum_Entconcentrations_PT();
+     }
+    
+    
+    
+    discrete% OLclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_OL();
+        sense d.getCount_ORG_name();
+        sense d.getCount_location_name();
+        sense d.getCoExistence_OrgLocation();
+        sense d.getMatchExist_titled_org();
+        sense d.getMatchExist_titled_location();
+        sense d.getEntConcentration_location_name();
+        sense d.getEntConcentration_org_name();
+        sense d.getSum_Entconcentrations_OL();	
+     }
+        
+    
+    discrete% OTclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_OT();
+        sense d.getCount_ORG_name();
+        sense d.getCount_time_name();
+        sense d.getCoExistence_OrgTime();
+        sense d.getMatchExist_titled_org();
+        sense d.getMatchExist_titled_time();
+        sense d.getEntConcentration_time_name();
+        sense d.getEntConcentration_org_name();
+        sense d.getSum_Entconcentrations_OT();	
+     }
+     
+    
+    discrete% OL_OTclassifier_featuresExtractor(myDocument d) <- {
+        
+        sense d.getQuotationValue_OL();;
+        sense d.getCount_ORG_name();
+        sense d.getCount_location_name();
+        sense d.getCoExistence_OrgLocation();
+        sense d.getMatchExist_titled_location();
+        sense d.getEntConcentration_location_name();
+        sense d.getSum_Entconcentrations_OL();
+        sense d.getQuotationValue_OT();
+        sense d.getCount_time_name();
+        sense d.getCoExistence_OrgTime();
+        sense d.getMatchExist_titled_org();
+        sense d.getMatchExist_titled_time();
+        sense d.getEntConcentration_time_name();
+        sense d.getEntConcentration_org_name();
+        sense d.getSum_Entconcentrations_OT();		
+     }
+      
+      
+   
+discrete% OTHER_featuresExtractor(myDocument d) <- {
+        sense d.coExis_PLT;
+        sense d.coExis_OLT;
+        sense d.coExis_LT;
+     }
+	 
+      discrete{"0","1"} Label(myDocument d) <- { return d.lebel; }
+      discrete{"0","1"} Lebel_PL(myDocument d) <- { return d.lebel_PL; }        
+      discrete{"0","1"} Lebel_PT(myDocument d) <- { return d.lebel_PT; }
+      discrete{"0","1"} Lebel_OL(myDocument d) <- { return d.lebel_OL; }    
+      discrete{"0","1"} Lebel_OT(myDocument d) <- { return d.lebel_OT; }              
+        
+discrete PLclassifier(myDocument d) <-
+    learn Lebel_PL
+    using PLclassifier_featuresExtractor                                 
+    from new myDocumentReader("data/train")
+    10 rounds
+    with new SupportVectorMachine()      	 
+    progressOutput 0
+ end
+
+discrete PTclassifier(myDocument d) <-
+    learn Lebel_PT
+    using PTclassifier_featuresExtractor                                 
+    from new myDocumentReader("data/train")
+    10 rounds
+    with new SupportVectorMachine()          
+    progressOutput 0
+ end         
+
+discrete OTclassifier(myDocument d) <-
+    learn Lebel_OT
+    using OTclassifier_featuresExtractor                                 
+    from new myDocumentReader("data/train")
+    10 rounds
+    with new SupportVectorMachine()           
+    progressOutput 0
+ end        
+discrete OLclassifier(myDocument d) <-
+    learn Lebel_OL
+    using OLclassifier_featuresExtractor                                 
+    from new myDocumentReader("data/train")
+    10 rounds
+    with new SupportVectorMachine()          
+    progressOutput 0
+ end     
+
+
+discrete PLTclassifier(myDocument d) <-
+    learn Label
+    using PTclassifier,PLclassifier,OTclassifier,OLclassifier,OL_OTclassifier_featuresExtractor,PL_PTclassifier_featuresExtractor,OTHER_featuresExtractor
+    from new myDocumentReader("data/train")
+    10 rounds
+    with new SupportVectorMachine()       
+    cval 10 "random"
+    		alpha .07   
+    progressOutput 0
+ end          
+    
+

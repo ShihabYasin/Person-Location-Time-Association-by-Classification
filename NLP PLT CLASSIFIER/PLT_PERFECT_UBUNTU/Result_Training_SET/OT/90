@@ -1,0 +1,141 @@
+shihab@ubuntu:~$ ./scripts/compileLBJ lbj/PLTclassifier.lbj
+Note: src/myDocumentReader.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Generating code for PLclassifier_featuresExtractor
+Generating code for PTclassifier_featuresExtractor
+Generating code for PL_PTclassifier_featuresExtractor
+Generating code for OLclassifier_featuresExtractor
+Generating code for OTclassifier_featuresExtractor
+Generating code for OL_OTclassifier_featuresExtractor
+Generating code for OTHER_featuresExtractor
+Generating code for Label
+Generating code for Lebel_PL
+Generating code for Lebel_PT
+Generating code for Lebel_OL
+Generating code for Lebel_OT
+Generating code for OLclassifier
+Compiling generated code
+Training OLclassifier
+  OLclassifier: Cross Validation: k = 10, Split = random, Rounds = 10
+  OLclassifier: Training against subset 0 at Fri Sep 25 09:16:37 PDT 2015
+iter  1 act 4.814e+03 pre 4.787e+03 delta 2.024e-01 f 5.490e+03 |g| 4.757e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.736e+02 pre 1.674e+02 delta 3.620e-01 f 6.760e+02 |g| 2.603e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.361e+02 pre 1.206e+02 delta 4.889e-01 f 5.024e+02 |g| 7.063e+02 CG   2
+iter  4 act 7.993e+01 pre 6.659e+01 delta 5.960e-01 f 3.663e+02 |g| 8.883e+02 CG   4
+iter  5 act 2.587e+01 pre 2.458e+01 delta 5.960e-01 f 2.864e+02 |g| 6.476e+02 CG   3
+iter  6 act 2.158e+00 pre 2.151e+00 delta 5.960e-01 f 2.605e+02 |g| 1.589e+02 CG   3
+  OLclassifier:   Subset 0 Accuracy: 98.36066%
+  OLclassifier: Training against subset 1 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.851e+03 pre 4.824e+03 delta 2.019e-01 f 5.490e+03 |g| 4.806e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.589e+02 pre 1.525e+02 delta 3.410e-01 f 6.387e+02 |g| 2.651e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.199e+02 pre 1.047e+02 delta 4.909e-01 f 4.798e+02 |g| 6.873e+02 CG   2
+iter  4 act 6.636e+01 pre 5.538e+01 delta 5.285e-01 f 3.598e+02 |g| 8.274e+02 CG   3
+iter  5 act 3.043e+01 pre 2.868e+01 delta 5.285e-01 f 2.935e+02 |g| 5.576e+02 CG   3
+iter  6 act 9.819e+00 pre 9.552e+00 delta 5.285e-01 f 2.630e+02 |g| 1.828e+02 CG   4
+  OLclassifier:   Subset 1 Accuracy: 100.0%
+  OLclassifier: Training against subset 2 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.843e+03 pre 4.816e+03 delta 2.022e-01 f 5.490e+03 |g| 4.790e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.640e+02 pre 1.577e+02 delta 3.550e-01 f 6.467e+02 |g| 2.635e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.210e+02 pre 1.079e+02 delta 4.632e-01 f 4.827e+02 |g| 6.914e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 7.570e+01 pre 6.332e+01 delta 5.881e-01 f 3.617e+02 |g| 9.641e+02 CG   4
+iter  5 act 2.410e+01 pre 2.241e+01 delta 5.881e-01 f 2.860e+02 |g| 4.405e+02 CG   3
+iter  6 act 8.734e+00 pre 8.487e+00 delta 5.881e-01 f 2.619e+02 |g| 2.036e+02 CG   4
+  OLclassifier:   Subset 2 Accuracy: 100.0%
+  OLclassifier: Training against subset 3 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.811e+03 pre 4.784e+03 delta 2.020e-01 f 5.490e+03 |g| 4.763e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.717e+02 pre 1.656e+02 delta 3.644e-01 f 6.793e+02 |g| 2.595e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.288e+02 pre 1.175e+02 delta 4.535e-01 f 5.076e+02 |g| 6.884e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 8.188e+01 pre 6.948e+01 delta 5.622e-01 f 3.788e+02 |g| 1.211e+03 CG   4
+cg reaches trust region boundary
+iter  5 act 3.232e+01 pre 3.118e+01 delta 5.910e-01 f 2.970e+02 |g| 4.722e+02 CG   4
+  OLclassifier:   Subset 3 Accuracy: 100.0%
+  OLclassifier: Training against subset 4 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.879e+03 pre 4.851e+03 delta 2.024e-01 f 5.490e+03 |g| 4.822e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.601e+02 pre 1.543e+02 delta 3.552e-01 f 6.105e+02 |g| 2.676e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.193e+02 pre 1.075e+02 delta 4.739e-01 f 4.504e+02 |g| 6.641e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 8.299e+01 pre 7.182e+01 delta 5.818e-01 f 3.311e+02 |g| 1.073e+03 CG   3
+cg reaches trust region boundary
+iter  5 act 4.256e+01 pre 4.092e+01 delta 6.205e-01 f 2.481e+02 |g| 5.104e+02 CG   4
+  OLclassifier:   Subset 4 Accuracy: 95.08197%
+  OLclassifier: Training against subset 5 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.785e+03 pre 4.760e+03 delta 2.005e-01 f 5.490e+03 |g| 4.772e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.755e+02 pre 1.706e+02 delta 3.727e-01 f 7.054e+02 |g| 2.543e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.471e+02 pre 1.348e+02 delta 5.111e-01 f 5.299e+02 |g| 6.880e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 8.514e+01 pre 7.190e+01 delta 6.349e-01 f 3.828e+02 |g| 7.803e+02 CG   4
+iter  5 act 2.732e+01 pre 2.605e+01 delta 6.349e-01 f 2.976e+02 |g| 4.835e+02 CG   4
+  OLclassifier:   Subset 5 Accuracy: 100.0%
+  OLclassifier: Training against subset 6 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.967e+03 pre 4.934e+03 delta 2.049e-01 f 5.490e+03 |g| 4.848e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.452e+02 pre 1.393e+02 delta 3.191e-01 f 5.232e+02 |g| 2.832e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 8.250e+01 pre 7.378e+01 delta 3.909e-01 f 3.779e+02 |g| 6.521e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 6.001e+01 pre 5.305e+01 delta 4.957e-01 f 2.954e+02 |g| 1.052e+03 CG   3
+cg reaches trust region boundary
+iter  5 act 2.817e+01 pre 2.698e+01 delta 5.320e-01 f 2.354e+02 |g| 4.365e+02 CG   4
+iter  6 act 7.711e+00 pre 7.310e+00 delta 5.320e-01 f 2.073e+02 |g| 1.490e+02 CG   4
+  OLclassifier:   Subset 6 Accuracy: 96.72131%
+  OLclassifier: Training against subset 7 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.821e+03 pre 4.796e+03 delta 2.008e-01 f 5.490e+03 |g| 4.802e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.727e+02 pre 1.670e+02 delta 3.697e-01 f 6.688e+02 |g| 2.576e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.417e+02 pre 1.255e+02 delta 5.077e-01 f 4.961e+02 |g| 6.861e+02 CG   2
+iter  4 act 9.355e+01 pre 7.855e+01 delta 6.055e-01 f 3.544e+02 |g| 1.157e+03 CG   3
+cg reaches trust region boundary
+iter  5 act 4.767e+01 pre 4.484e+01 delta 6.471e-01 f 2.608e+02 |g| 5.743e+02 CG   3
+iter  6 act 9.931e+00 pre 9.811e+00 delta 6.471e-01 f 2.132e+02 |g| 1.583e+02 CG   5
+  OLclassifier:   Subset 7 Accuracy: 95.08197%
+  OLclassifier: Training against subset 8 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.815e+03 pre 4.789e+03 delta 2.014e-01 f 5.490e+03 |g| 4.781e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.702e+02 pre 1.638e+02 delta 3.639e-01 f 6.750e+02 |g| 2.603e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.369e+02 pre 1.263e+02 delta 4.993e-01 f 5.048e+02 |g| 6.881e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 9.010e+01 pre 7.640e+01 delta 6.191e-01 f 3.679e+02 |g| 1.019e+03 CG   4
+iter  5 act 3.274e+01 pre 3.106e+01 delta 6.191e-01 f 2.778e+02 |g| 4.912e+02 CG   3
+iter  6 act 9.426e+00 pre 8.987e+00 delta 6.191e-01 f 2.451e+02 |g| 1.944e+02 CG   4
+  OLclassifier:   Subset 8 Accuracy: 96.72131%
+  OLclassifier: Training against subset 9 at Fri Sep 25 09:16:38 PDT 2015
+iter  1 act 4.826e+03 pre 4.799e+03 delta 2.020e-01 f 5.490e+03 |g| 4.777e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.732e+02 pre 1.669e+02 delta 3.576e-01 f 6.645e+02 |g| 2.626e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.407e+02 pre 1.253e+02 delta 5.172e-01 f 4.913e+02 |g| 7.145e+02 CG   2
+iter  4 act 7.745e+01 pre 6.189e+01 delta 6.816e-01 f 3.505e+02 |g| 6.677e+02 CG   5
+iter  5 act 2.557e+01 pre 2.280e+01 delta 6.816e-01 f 2.731e+02 |g| 5.119e+02 CG   3
+iter  6 act 1.043e+01 pre 1.032e+01 delta 6.816e-01 f 2.475e+02 |g| 2.510e+02 CG   4
+  OLclassifier:   Subset 9 Accuracy: 98.36066%
+  OLclassifier:   90.0% confidence interval after 10 rounds: 98.03279% +/- 1.16817%
+  OLclassifier: Training on entire training set
+iter  1 act 5.379e+03 pre 5.349e+03 delta 2.021e-01 f 6.100e+03 |g| 5.324e+04 CG   1
+cg reaches trust region boundary
+iter  2 act 1.846e+02 pre 1.779e+02 delta 3.569e-01 f 7.211e+02 |g| 2.924e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.420e+02 pre 1.273e+02 delta 4.843e-01 f 5.366e+02 |g| 7.602e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 8.978e+01 pre 7.539e+01 delta 6.131e-01 f 3.946e+02 |g| 1.026e+03 CG   4
+iter  5 act 3.024e+01 pre 2.839e+01 delta 6.131e-01 f 3.048e+02 |g| 5.421e+02 CG   3
+iter  6 act 1.073e+01 pre 1.033e+01 delta 6.131e-01 f 2.745e+02 |g| 2.192e+02 CG   4
+Writing OLclassifier
+Compiling generated code
+shihab@ubuntu:~$ 
+
